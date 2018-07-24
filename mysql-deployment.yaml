@@ -19,6 +19,7 @@ metadata:
   labels:
     app: wordpress
 spec:
+  volumeMode:FileSystem
   accessModes:
     - ReadWriteOnce
   resources:
@@ -63,3 +64,4 @@ spec:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-pv-claim
+          
