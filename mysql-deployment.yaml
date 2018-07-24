@@ -23,9 +23,9 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 20Gi
+      storage: 1Gi
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1  #beta2
 kind: Deployment
 metadata:
   name: wordpress-mysql
