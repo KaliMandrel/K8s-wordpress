@@ -19,7 +19,7 @@ metadata:
   labels:
     app: wordpress
 spec:
-  volumeMode:FileSystem
+  volumeMode: FileSystem
   accessModes:
     - ReadWriteOnce
   resources:
